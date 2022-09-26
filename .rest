@@ -1,0 +1,54 @@
+POST http://localhost:3000/contracts/add
+Content-Type: application/json
+# authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmYwMWFjMzcwMmM4MzRjODQwNmUwZiIsIm5hbWUiOiJMYW5yZSIsImlhdCI6MTY2NDAyNTAwNH0.f3kUYxmpP-CqtqKvjkHoyl51gr7n0gjygU-l8QDBEbA 
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmVlYjdhYjRlZTVkM2MxYzQ0NDJmMyIsIm5hbWUiOiJPRHVuYXlvIEFsbyIsImlhdCI6MTY2NDA0NTYzNn0.AQglgBJ-INLgRDua2KM3qCwI3CWSBoJfauvGD93IqZI
+
+{
+    "contract":"new contract",
+    "company":"Oyemekun"
+    
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"oluwaseun@gmail.com",
+    "password":"secretpass"
+}
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name":"aloodunayo",
+    "email":"lorr@gmail.com",
+    "password":"secret"
+}
+###
+GET http://localhost:3000/contracts
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmYwMWFjMzcwMmM4MzRjODQwNmUwZiIsIm5hbWUiOiJMYW5yZSIsImlhdCI6MTY2NDAyNTAwNH0.f3kUYxmpP-CqtqKvjkHoyl51gr7n0gjygU-l8QDBEbA 
+# authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmVlYjdhYjRlZTVkM2MxYzQ0NDJmMyIsIm5hbWUiOiJPRHVuYXlvIEFsbyIsImlhdCI6MTY2NDA0NTYzNn0.AQglgBJ-INLgRDua2KM3qCwI3CWSBoJfauvGD93IqZI
+###
+GET http://localhost:3000/contracts/632f29023d6a4a2ef0ced043
+Content-Type: application/json
+# authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmYwMWFjMzcwMmM4MzRjODQwNmUwZiIsIm5hbWUiOiJMYW5yZSIsImlhdCI6MTY2NDAyNTAwNH0.f3kUYxmpP-CqtqKvjkHoyl51gr7n0gjygU-l8QDBEbA 
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmVlYjdhYjRlZTVkM2MxYzQ0NDJmMyIsIm5hbWUiOiJPRHVuYXlvIEFsbyIsImlhdCI6MTY2NDA0NTYzNn0.AQglgBJ-INLgRDua2KM3qCwI3CWSBoJfauvGD93IqZI
+###
+PATCH http://localhost:3000/contracts/edit/632f29023d6a4a2ef0ced043
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmYwMWFjMzcwMmM4MzRjODQwNmUwZiIsIm5hbWUiOiJMYW5yZSIsImlhdCI6MTY2NDAyNTAwNH0.f3kUYxmpP-CqtqKvjkHoyl51gr7n0gjygU-l8QDBEbA 
+# authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmVlYjdhYjRlZTVkM2MxYzQ0NDJmMyIsIm5hbWUiOiJPRHVuYXlvIEFsbyIsImlhdCI6MTY2NDA0NTYzNn0.AQglgBJ-INLgRDua2KM3qCwI3CWSBoJfauvGD93IqZI
+
+{
+    "contract":"Reconstitution",
+    "company":"DRFOT"
+    
+}
+
+###
+DELETE http://localhost:3000/contracts/delete/632f29023d6a4a2ef0ced043
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmYwMWFjMzcwMmM4MzRjODQwNmUwZiIsIm5hbWUiOiJMYW5yZSIsImlhdCI6MTY2NDAyNTAwNH0.f3kUYxmpP-CqtqKvjkHoyl51gr7n0gjygU-l8QDBEbA 
+# authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmVlYjdhYjRlZTVkM2MxYzQ0NDJmMyIsIm5hbWUiOiJPRHVuYXlvIEFsbyIsImlhdCI6MTY2NDA0NTYzNn0.AQglgBJ-INLgRDua2KM3qCwI3CWSBoJfauvGD93IqZI
